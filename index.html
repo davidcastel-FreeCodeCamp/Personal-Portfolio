@@ -7,31 +7,50 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
     <title>Personal Portfolio</title>
 </head>
 
-<body>
+<body id="home">
 
-    <!-- Nav-Bar -->
-    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-danger sticky-top">
-        <!-- Logo -->
-        <a href="" class="navbrand">.</a>
+    <header id="header">
+        <!-- Nav-Bar -->
+        <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-danger position-fixed w-100">
+            <!-- Logo -->
+            <a href="home" class="navbrand"><img id="header-img" src="/open-iconic/svg/laptop.svg" alt=""></a>
 
-        <!-- Collapse Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
-            aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigations">
-            <span class="navbar-toggler-icon"></span>
-        </button> <!-- End of Button -->
+            <!-- Collapse Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-content"
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigations">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!-- End of Button -->
 
-        <!-- Content -->
-        <div class="collapse navbar-collapse" id="navbar-content">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="" class="nav-link h4">Home</a></li>
-                <li class="nav-item"><a href="" class="nav-link h4">Welcome</a></li>
-                <li class="nav-item"><a href="" class="nav-link h4">Projects</a></li>
-            </ul>
-        </div> <!-- End of Content-->
-    </nav> <!-- End of Navbar-->
+            <!-- Content -->
+            <div class="collapse navbar-collapse" id="navbar-content">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a href="#home" class="nav-link h4">Home</a></li>
+                    <li class="nav-item"><a href="#welcome-section" class="nav-link h4">Welcome</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link h4">Projects</a></li>
+                </ul>
+            </div> <!-- End of Content-->
+        </nav> <!-- End of Navbar-->
+    </header>
+
+    <header id="welcome-section" class="d-flex flex-column justify-content-center align-items-center w-100 bg-info">
+        <h1>Welcome to my Personal Page</h1>
+        <em>I am currently underconstruction so excuse my apperance</em>
+    </header>
+
+    <section id="projects" class="d-flex flex-column justify-content-center align-items-center w-100 bg-dark py-5">
+        <h2 class="text-white">My Past Projects</h2>
+        <p class="h5 text-white">You can check out my github profile and other projects here : <a
+                href="www.github.com/davidcastel" id="profile-link" target="_blank">Click Here to see Github</a></p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="project-tile"></div>
+            </div>
+        </div>
+    </section>
 
 
 
